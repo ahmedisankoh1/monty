@@ -3,6 +3,10 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
+#include <sys/types.h>
+#include <fcntl.h>
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -33,7 +37,22 @@ typedef struct instruction_s
         char *opcode;
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
-
+/**
+ * struct monty_s - variables -args, file, line content
+ * @arg: Deals with the value
+ * @file: It is a pointer to the monty file
+ * @content: line content
+ * @lifi: flag change stack <-> queue
+ * Description: carries values through the program
+ */
+typedef struct monty_s
+{
+	char *arg;
+	FILE *file;
+	char *content;
+	int lifi;
+}  monty;
+extern monty ais;
 
 
 
