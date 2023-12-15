@@ -5,7 +5,7 @@
  * @n: value to be added
  * Return: returns nothing || void
  */
-void *addnodeintstack(stack_t **head, const int n)
+void addnodeintstack(stack_t **head, const int n)
 {
 	stack_t *new;
 	stack_t *h;
@@ -14,7 +14,7 @@ void *addnodeintstack(stack_t **head, const int n)
 	if (new == NULL)
 	{
 		printf("There is an error\n");
-		exit(0);
+		exit (0);
 	}
 
 	new->n = n;

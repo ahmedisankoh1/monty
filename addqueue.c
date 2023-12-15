@@ -6,14 +6,14 @@
  *
  * Return: nothing || void
  */
-void *addnodeintqueue(stack_t **head, const int n)
+void addnodeintqueue(stack_t **head, const int n)
 {
 	stack_t *h;
 	stack_t *new;
 
 	new = malloc(sizeof(stack_t));
 	if (new == NULL)
-		return (NULL);
+		exit (0);
 
 	new->n = n;
 	new->next = NULL;
@@ -32,4 +32,5 @@ void *addnodeintqueue(stack_t **head, const int n)
 	}
 
 	new->prev = h;
+
 }

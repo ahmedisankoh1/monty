@@ -54,8 +54,8 @@ typedef struct monty_s
 }  monty;
 extern monty ais;
 
-void *addnodeintstack(stack_t **head, const int n);
-void *addnodeintqueue(stack_t **head, const int n);
+void addnodeintstack(stack_t **head, const int n);
+void addnodeintqueue(stack_t **head, const int n);
 int execute(char *content, stack_t **stack, unsigned int counter, FILE *file);
 void f_push(stack_t **head, unsigned int counterg);
 void free_stack(stack_t *head);
