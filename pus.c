@@ -5,9 +5,9 @@
  * @counter: line_number
  * Return: returns nothing || void
 */
-void f_push(stack_t **head, unsigned int counterg
+void f_push(stack_t **head, unsigned int counter)
 {
-	int n,  i= 0, flag = 0;
+	int n, i = 0, flag = 0;
 
 	if (ais.arg)
 	{
@@ -29,7 +29,7 @@ void f_push(stack_t **head, unsigned int counterg
 	}
 	else
 	{
-	       	fprintf(stderr, "L%d: usage: push integer\n", counter);
+		fprintf(stderr, "L%d: usage: push integer\n", counter);
 		fclose(ais.file);
 		free(ais.content);
 		free_stack(*head);

@@ -1,5 +1,5 @@
 /**
- * addnodeint - add a new node at the top of the stack
+ * addnodeintstack - add a new node at the top of the stack
  * @head: a pointer to ths stack
  * @n: value to be added
  * Return: returns nothing || void

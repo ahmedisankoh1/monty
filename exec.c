@@ -10,14 +10,14 @@
  */
 int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
 {
-	char *op
+	char *op;
 
 	op = strtok(content, " \n\t");
 	if (op && op[0] == '#')
 	{
 		return (0);
 	}
-	bus.arg = strtok(NULL, " \n\t");
+	ais.arg = strtok(NULL, " \n\t");
 
 	switch (op[0])
 	{

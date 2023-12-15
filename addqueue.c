@@ -5,7 +5,7 @@
  *
  * Return: nothing || void
  */
-void *addnodequeue(stack_t **head, const int n)
+void *addnodeintqueue(stack_t **head, const int n)
 {
 	stack_t *h;
 	stack_t *new;
