@@ -1,3 +1,4 @@
+#include "monty.h"
 /**
  * addnodeintstack - add a new node at the top of the stack
  * @head: a pointer to ths stack
@@ -11,7 +12,10 @@ void *addnodeintstack(stack_t **head, const int n)
 
 	new = malloc(sizeof(stack_t));
 	if (new == NULL)
+	{
+		printf("There is an error\n");
 		exit(0);
+	}
 
 	new->n = n;
 	new->prev = NULL;
@@ -29,4 +33,5 @@ void *addnodeintstack(stack_t **head, const int n)
 		h->prev = new;
 
 	*head = new;
+
 }

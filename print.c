@@ -1,14 +1,17 @@
+#include "monty.h"
 /**
  * f_pall - prints all the data in a linked list
- * @h: pointer to the first node
+ * @head: pointer to the first node
+ * @counter: unsued in this functiog
  *
  * Return: nothing ||void
  */
 void f_pall(stack_t **head, unsigned int counter)
 {
+	stack_t *h;
 	(void)counter;
-	stack_t h = *head;
 
+	h = *head;
 	if (h == NULL)
 		return;
 	while (h->prev != NULL)
