@@ -37,7 +37,7 @@ void f_push(stack_t **head, unsigned int counterg
 	}
 	n = atoi(ais.arg);
 	if (ais.lifi == 0)
-		addnode(head, n);
+		addnodeintstack(head, n);
 	else
-		addqueue(head, n);
+		addnodeintqueue(head, n);
 }
